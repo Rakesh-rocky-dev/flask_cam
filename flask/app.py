@@ -4,7 +4,6 @@ import busio
 import adafruit_adxl34x
 import time
 from datetime import datetime
-
 from flask import Flask,render_template,Response
 import cv2
 

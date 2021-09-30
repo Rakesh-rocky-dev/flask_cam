@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<!--  the link for sample real time chart https://medium.com/@data.corgi9/real-time-graph-using-flask-75f6696deb55 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Akasha Paritha</title>
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="loader">
+        <img src="static/resources/jarvis.gif" alt="">
+    </div>
+    <h1>Akasha Pathika</h1>
+    <div class="left">
+        <div class="cam_pi">
+            <img src="{{ url_for('live_feed') }}" width="600px" class="feed" />
+        </div>
+    </div>
+    <div class="right">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <canvas id="canvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!--
+        <div class="controls">
+            <button onclick="left" id="left">Left</button>
+            <button onclick="forward" id="forward">Forward</button>
+            <button onclick="right" id="right">Right</button>
+            <button onclick="stop" id="stop">Stop</button>
+            <button onclick="collect" id="collect">Collect</button>
+            <button onclick="backward" id="backward">Backward</button>
+            <button onclick="load" id="load">load</button>
+        </div>
+    -->
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="static/script.js"></script>
+    <script src="static/app.js"></script>
+</body>
+
+</html>

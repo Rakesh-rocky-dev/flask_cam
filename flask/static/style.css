@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+body {
+    background-image: url(resources/space.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    font-size: 35px;
+    margin-right: 5px;
+    padding: 5px;
+    color: white
+}
+
+.feed {
+    margin-left: 10px;
+}
+
+p {
+    font-family: 'Gluten', cursive;
+}
+
+input[type="submit"] {
+    border-radius: 20px;
+    font-size: 20px;
+    height: 75px;
+    width: 180px;
+    padding: 20px;
+    align-items: center;
+}
+
+input[type="submit"] {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"]:hover {
+    background-color: #0099ff;
+}
+
+span {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gluten', cursive;
+    float: right;
+}
+
+.controls {
+    width: 580px;
+    padding: 10px;
+    align-content: center;
+}
+
+#stop {
+    margin-left: 188px;
+    margin-right: 185px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disppear {
+    animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.container,
+.card,
+.card-body {
+    z-index: -1;
+    width: 550px;
+    height: 385px;
+    float: right;
+}
